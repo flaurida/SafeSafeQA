@@ -1,6 +1,5 @@
 name: qawolf
 on:
-  push:
     # test every branch
     # edit below if you only want certain branches tested
     # branches: "*"
