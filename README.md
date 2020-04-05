@@ -1,4 +1,4 @@
-![qawolf](https://github.com/pwicherski/SafeSafeQA/workflows/qawolf/badge.svg)
+![smokeTests](https://github.com/pwicherski/SafeSafeQA/workflows/smokeTests/badge.svg)
 
 # SafeSafe_QA
 SafeSafe QA repo
