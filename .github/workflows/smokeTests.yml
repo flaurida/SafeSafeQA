@@ -1,10 +1,6 @@
-name: qawolf
+name: smokeTests
 on:
-  push:
-    # test every branch
-    # edit below if you only want certain branches tested
-   branches: "*"
-   schedule:
+  schedule:
     # test on schedule using cron syntax
      - cron: "0 * * * *" # every hour
 jobs:
@@ -38,7 +34,7 @@ jobs:
       # - name: Start local server
       #   run: npm run start & npx wait-on http://localhost:3000
 
-      - run: npx qawolf test --headless
+      - run: npx qawolf test --headless smokeTestOnDevEnv
         env:
           # configure tests with environment variables
           FFMPEG_PATH: /usr/bin/ffmpeg # for recording video
