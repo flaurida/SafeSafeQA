@@ -1,8 +1,10 @@
 name: smokeTests
 on:
+  push:
+    branches: "*"
   schedule:
     # test on schedule using cron syntax
-     - cron: "0 * * * *" # every hour
+     - cron: "*/30 * * * *" # every hour
 jobs:
   test:
     runs-on: ubuntu-18.04
