@@ -24,9 +24,6 @@ test('smokeTestOnDevEnv', async () => {
   await page.click(selectors["3_term_1_input"]);
   await page.click(selectors["4_term_2_input"]);
   await page.click(selectors["5_button"]);
-  await page.click(selectors["6_phone_input"]);
-  await page.type(selectors["7_phone_input"], "000000000");
-  await page.click(selectors["8_button"]);
   await page.click(selectors["9_phone_input"]);
   await page.fill(selectors["10_phone_input"], "555555555");
   await page.click(selectors["11_button"]);
