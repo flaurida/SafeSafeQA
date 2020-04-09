@@ -16,7 +16,7 @@ afterAll(async () => {
   await browser.close();
 });
 
-test("smokeTestOnDevEnv", async () => {
+test('smokeTestOnDevEnv', async () => {
   await page.goto("http://safesafe.thecoders.io/");
   await page.click(selectors["0_button"]);
   await page.click(selectors["1_name_input"]);
@@ -26,7 +26,7 @@ test("smokeTestOnDevEnv", async () => {
   await page.click(selectors["5_button"]);
   await page.click(selectors["9_phone_input"]);
   await page.fill(selectors["10_phone_input"], "555555555");
-  await new Promise((r) => setTimeout(r, 2000));
+  await new Promise(r => setTimeout(r, 2000));
   await page.click(selectors["11_button"]);
   await page.click(selectors["35_button"]);
   await page.click(selectors["12_sex_input"]);
