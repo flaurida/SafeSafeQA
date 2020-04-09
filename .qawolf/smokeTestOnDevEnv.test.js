@@ -28,6 +28,7 @@ test('smokeTestOnDevEnv', async () => {
   await page.fill(selectors["10_phone_input"], "555555555");
   await new Promise(r => setTimeout(r, 2000));
   await page.click(selectors["11_button"]);
+  await page.click(selectors["35_button"]);
   await page.click(selectors["12_sex_input"]);
   await page.click(selectors["13_button"]);
   await page.click(selectors["14_age_input"]);
